@@ -33,7 +33,7 @@ class StartFragment : Fragment() {
 
         startButton.setOnClickListener(){
             val fragment = ReadyFragment.Companion.newInstance()
-            
+
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.container, fragment)
